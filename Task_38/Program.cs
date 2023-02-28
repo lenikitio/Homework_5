@@ -17,7 +17,7 @@ double[] GetRealArray(int size, int min, int max)
 void GetDif(double[] arrey)
 {
     double max = arrey[0];
-    double min = arrey[1];
+    double min = arrey[0];
     foreach(double elem in arrey)
     {
         if( elem >= max)
