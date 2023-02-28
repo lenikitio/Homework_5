@@ -18,12 +18,9 @@ int[] GetRandomArray(int size, int min, int max)
 void GetSum(int[] array)
 {
     int sum = 0;
-    foreach(int elem in array)
-    {
-        if(elem % 2 != 0)
-        sum += elem;
-    }
-    Console.WriteLine($"Сумма всех нечётных элементов массива равна: {sum}");
+    for(int i = 0; i < array.Length; i += 2)
+        sum += array[i];
+    Console.WriteLine($"Сумма всех элементов массива, стоящих на нечётных позициях равна: {sum}");
 }
 
 int[] arr = GetRandomArray(10, -8, 10);
